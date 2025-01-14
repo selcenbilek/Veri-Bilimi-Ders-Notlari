@@ -1,1 +1,70 @@
+# **BTA Veri Bilimi**
+
+## EĞİTMEN: M. Ali Bayram
+
+![][image1]
+
+**Veri Türleri:**
+
+Veri bilimine girişte temel olarak **4** tür veri vardır: **nümerik, kategorik, zaman serisi ve metinsel** veriler. 
+
+1. **Nümerik Veri (Sayısal Veri)**  
+   * *Açıklama*: Sayılarla ifade edilen ve genellikle ölçüm veya hesaplama yapılan veriler.  
+   * *Örnek*: Bir araçtaki yolcuların sayısı (3 kişi), hava sıcaklığı (25°C).  
+2. **Kategorik Veri (Sınıflandırılmış Veri)**  
+   * *Açıklama*: Belirli sınıflara veya kategorilere ayrılan veriler. Sayısal değil, genellikle metinsel formatta olur.  
+   * *Örnek*: Araç türleri (otomobil, otobüs, bisiklet), renkler (kırmızı, mavi, yeşil).  
+3. **Zaman Serisi Verisi**  
+   * *Açıklama*: Zamanla değişen ve genellikle belirli aralıklarda toplanan veriler.  
+   * *Örnek*: Günlük trafik hacmi (her saat için geçen araç sayısı), bir şehrin aylık sıcaklık ölçümleri.  
+4. **Metinsel Veri (Text Data)**  
+   * *Açıklama*: Yazılı kelime veya cümlelerden oluşan veriler. Analiz edilmesi için doğal dil işleme teknikleri gerekir.  
+   * *Örnek*: Sosyal medya yorumları, müşteri şikayetleri.
+
+**Problem Türleri:**
+
+Veri bilimi ve makine öğreniminde problemler genellikle **çözülmek istenen hedefe göre Regresyon (Regression)**
+
+* *Açıklama*: Sürekli bir sayısal değeri tahmin etmeye yönelik problemlerdir.  
+  * *Örnek*: Bir evin fiyatını tahmin etmek, bir aracın yakıt tüketimini hesaplamak.  
+2. **Sınıflandırma (Classification)**  
+   * *Açıklama*: Verileri belirli kategorilere ayırmaya yönelik problemlerdir.  
+   * *Örnek*: E-postaların spam olup olmadığını tespit etmek, bir hastanın hastalığını sınıflandırmak (örneğin, diyabet: evet/hayır).  
+3. **Kümelenme (Clustering)**  
+   * *Açıklama*: Veriyi önceden tanımlanmış bir hedef olmaksızın gruplara ayırma problemleridir.  
+   * *Örnek*: Müşteri segmentasyonu, şehirdeki trafik noktalarını gruplandırmak.  
+4. **Zaman Serisi Tahmini (Time Series Forecasting)**  
+   * *Açıklama*: Zamanla değişen veriler üzerinde gelecek değerleri tahmin etme problemleridir.  
+   * *Örnek*: Hisse senedi fiyatlarını tahmin etmek, hava durumu tahmini yapmak.  
+5. **Sıralama (Ranking)**  
+   * *Açıklama*: Verileri bir kriter veya önem sırasına göre sıralama problemleridir.  
+   * *Örnek*: Arama motorlarında en alakalı sonuçları sıralamak, ürün öneri sistemleri.  
+6. **Anomali Tespiti (Anomaly Detection)**  
+   * *Açıklama*: Verideki olağan dışı durumları veya anormal değerleri tespit etme problemleridir.  
+   * *Örnek*: Banka işlemlerinde dolandırıcılığı tespit etmek, üretim hatalarını bulmak.
+
+**Etiketli ve** **Etiketsiz Veri Nedir?**
+
+**Etiketli veri** ve **etiketsiz veri**, makine öğreniminde kullanılan veri türlerini ifade eder:
+
+### **1\. Etiketli Veri (Labeled Data)**
+
+* *Açıklama*: Veriye, belirli bir hedef veya cevap (etiket) eşlik eder. Her veri noktası, hem bir giriş (özellikler) hem de bir çıktı (etiket) içerir.  
+* *Örnek*:  
+  * E-posta metni (giriş) ve "spam" veya "normal" etiketi (çıkış).  
+  * Bir evin özellikleri (metrekare, oda sayısı) ve fiyatı (etiket).  
+* *Kullanım Alanı*: Denetimli öğrenme algoritmalarında (regresyon, sınıflandırma).
+
+### **2\. Etiketsiz Veri (Unlabeled Data)**
+
+* *Açıklama*: Veride yalnızca giriş özellikleri bulunur, ancak hedef veya çıktı bilgisi (etiket) yoktur. Model, bu verilerdeki kalıpları veya ilişkileri keşfetmeye çalışır.  
+* *Örnek*:  
+  * Müşteri demografik bilgileri (yaş, gelir, şehir), ancak herhangi bir kategoriye (sadık müşteri/ara sıra alışveriş yapan) ayrılmamış.  
+  * Bir şehirdeki trafik akışı verileri, ancak trafik yoğunluğu hakkında doğrudan bir etiket yok.  
+* *Kullanım Alanı*: Denetimsiz öğrenme algoritmalarında (kümelenme, boyut azaltma).
+
+**Fark**: Etiketli veri, belirli bir görev için doğru yanıt içerirken; etiketsiz veri, yalnızca modelin öğrenmesini sağlayacak ham bilgiyi içerir.
+
+[image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnAAAAAECAYAAAAOPwJdAAAANElEQVR4Xu3WMQ0AMAwEseAOoJIpqGYvgrzkwcshuLqnHwAAOeoPAADsZuAAAMIYOACAMAOTpGslhjl7rwAAAABJRU5ErkJggg==>
+
 
