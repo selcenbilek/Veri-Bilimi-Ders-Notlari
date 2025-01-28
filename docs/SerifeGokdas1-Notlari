@@ -1,1 +1,317 @@
+# Veri Bilimi
+
+Veri bilimi, verilerden anlamlı sonuçlar çıkarma sürecidir. Bu, istatistiksel analiz, veri görselleştirme, makine öğrenimi ve diğer analitik yöntemleri içerir. Veri biliminin temel hedeflerinden biri, verilere doğru modeller uygulayarak gelecekle ilgili tahminlerde bulunmaktır. Veri bilimi, birçok alt disiplini kapsar: veri analitiği, makine öğrenmesi, yapay zeka ve istatistik gibi. Veri bilimcileri, verilerin doğru bir şekilde işlenmesi ve yorumlanması için çeşitli algoritmalar ve modeller kullanır.
+
+---
+
+## Yapay Zeka Modelleri
+
+Bir yapay zeka modeli, belirli bir matematiksel formül ve bu formülde kullanılan parametrelerden oluşur. Bu modeller, veriye dayalı öğrenme ve tahmin yapma amacıyla geliştirilir. Modelin başarısı, verilerin işlenme kalitesine ve doğru parametre seçimine bağlıdır.
+
+---
+
+## Veri Türleri
+
+İstatistikte veri iki ana kategoriye ayrılır:
+1. **Sayısal Veri (Numeric Data):** Ölçülebilir ve genellikle sayılarla ifade edilir. Örneğin, gelir miktarı, yaş.
+2. **Kategorik Veri (Categorical Data):** Sınıflara veya kategorilere ayrılmıştır. Örneğin, cinsiyet (kadın/erkek), araç türü (otomobil/suv).
+
+---
+
+## Veri Bilimi Modelleri
+
+Veri biliminin üç temel model türü vardır:
+1. **Regresyon Problemleri:** Geçmiş verilerden yola çıkarak mevcut durum ve gelecekle ilgili tahmin yapmayı içerir. Örneğin, bir şirketin satış tahmini.
+2. **Sınıflandırma (Classification):** Verileri belirli sınıflara ayırma işlemidir. Örneğin, bir kişinin kredi almaya uygun olup olmadığını belirleme.
+3. **Kümeleme (Clustering):** Verileri benzerliklerine göre gruplara ayırma işlemidir. Örneğin, müşteri segmentasyonu.
+
+---
+
+## Makine Öğrenimi Türleri
+
+Makine öğrenimi genel olarak üç kategoriye ayrılır:
+1. **Gözetimli Öğrenme (Supervised Learning):** Model, öğrenmek için kullanılan verilere bir etiket veya sonuç bilgisi ile birlikte eğitilir. Örneğin, sınıflandırma problemleri genellikle gözetimli öğrenme ile çözülür.
+   - **Örnek:** Bir öğrencinin not ortalamasına göre başarılı olup olmadığını tahmin etmek.
+2. **Gözetimsiz Öğrenme (Unsupervised Learning):** Verilere herhangi bir etiket veya sonuç bilgisi verilmeden modelin desen ve grupları tanımlaması istenir. Örneğin, K-Means algoritması bu tür öğrenmede kullanılır.
+   - **Örnek:** Müşteri gruplarını belirlemek için kümeleme yapılması.
+3. **Yarı Gözetimli Öğrenme (Semi-Supervised Learning):** Hem etiketli hem de etiketsiz veriler kullanılır. Özellikle etiketsiz verilerin fazla olduğu durumlarda tercih edilir.
+
+---
+
+## Lineer ve Lojistik Regresyon
+
+### 1. Lineer Regresyon
+Bir bağımlı değişken (**y**) ile bir veya daha fazla bağımsız değişken (**x₁, x₂, ..., xₙ**) arasındaki ilişkiyi modellemek için kullanılır. Amaç, iki değişken arasındaki doğrusal ilişkiyi modellemektir.
+
+Genel formülü: y = b + w₁x₁ + w₂x₂ + w₃x₃ + ... + wₙxₙ
+
+- **y:** Tahmin edilen değer (bağımlı değişken)
+- **b:** Y-intercept (kesme noktası)
+- **w₁, w₂, ..., wₙ:** Katsayılar (bağımsız değişkenlerin ağırlıkları)
+- **x₁, x₂, ..., xₙ:** Bağımsız değişkenler
+
+Eğer sadece bir bağımsız değişken varsa, bu **basit lineer regresyon** olarak adlandırılır ve formül şu şekildedir: y = b + wx
+
+- **Örnek:** Bir evin fiyatını tahmin etmek için oda sayısı ve metrekare gibi özellikler kullanılır.
+
+### 2. Lojistik Regresyon
+Bir sınıflandırma algoritmasıdır. Verilerin belirli bir sınıfa ait olup olmadığını tahmin eder. Bir olasılık değerini tahmin etmek için sigmoid fonksiyonunu kullanır.
+
+Sigmoid fonksiyonu: P(y=1) = 1 / (1 + e^(-z))
+
+- **P(y=1):** Bir olayın meydana gelme olasılığı
+- **e:** Euler sayısı (yaklaşık 2.718)
+- **z:** Lineer regresyondan gelen değer
+
+- **Örnek:** Bir müşterinin kredi kartı başvurusunun onaylanıp onaylanmayacağını tahmin etmek.
+
+---
+
+## Veri Biliminde Lineer Regresyon
+
+Veri bilimi ve makine öğrenmesi dünyasında, lineer regresyon önemli bir yer tutar. İstatistiksel bir model olarak, lineer regresyon, iki veya daha fazla değişken arasındaki ilişkiyi anlamamıza yardımcı olur. Özellikle bağımlı ve bağımsız değişkenler arasındaki doğrusal ilişkiyi modelleyerek gelecekteki tahminleri yapmayı amaçlar.
+
+### Lineer Regresyon Nedir?
+Lineer regresyon, bağımlı bir değişken ile bir veya daha fazla bağımsız değişken arasındaki ilişkiyi modelleyen bir tekniktir. Bu modelde amaç, bağımsız değişkenler ile bağımlı değişken arasındaki ilişkiyi doğrusal bir şekilde tanımlamaktır.
+
+Genel formül: Y = β₀ + β₁X₁ + β₂X₂ + … + βₙXₙ
+
+- **Y:** Bağımlı değişken
+- **X₁, X₂, ..., Xₙ:** Bağımsız değişkenler
+- **β₀:** Sabit terim (intercept)
+- **β₁, β₂, ..., βₙ:** Modelin katsayıları
+
+### Lineer Regresyonun Kilit Noktaları
+1. **Bağımsız ve Bağımlı Değişkenler:** Lineer regresyon, bir bağımlı değişkenin bir veya daha fazla bağımsız değişkenle olan ilişkisinin modellenmesini amaçlar.
+2. **Modelin Eğitilmesi:** Modelin doğru sonuçlar verebilmesi için, doğru eğitim verisiyle eğitilmesi gerekir. Bu süreçte hata terimleri (residuals) minimize edilir.
+3. **Katsayılar:** Modeldeki katsayılar (coefficients), bağımsız değişkenlerin etkisini gösterir.
+4. **R² (R-Kare) Değeri:** Modelin başarısını ölçmek için kullanılan bir değerdir. 0 ile 1 arasında bir değere sahip olup, modelin veriye ne kadar uyduğunu gösterir.
+5. **Mean Squared Error (MSE):** Modelin ne kadar iyi performans gösterdiğini ölçmek için kullanılan bir hata fonksiyonudur.
+
+---
+# Lineer Regresyonu Kısaca Özetleyelim
+
+Lineer regresyon, iki veya daha fazla değişken arasındaki doğrusal ilişkiyi modelleyen ve bu ilişkiye dayalı tahminlerde bulunan bir tekniktir. İstatistiksel bir yaklaşım olarak, genellikle veri biliminde kullanılan ilk yöntemlerden biridir ve daha karmaşık modellerin temelini oluşturur.
+
+---
+## Projem ve Kodlarım
+
+Bu projede, TV reklam bütçesi ile satışlar arasındaki ilişkiyi incelemek için lineer regresyon modeli kullandım. Aşağıda bu projeyi ve kodları adım adım açıklayacağım:
+
+### 1. Veriyi Yükleme ve Görselleştirme
+
+İlk olarak, gerekli kütüphaneleri indirdim:
+
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import kagglehub
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score ```
+
+Kaggle’dan elde ettiğim Advertising Sales Dataset verisini yükledim ve görüntüledim. Bu veri seti, TV, radyo ve gazete reklam bütçeleri ile satış verilerini içeriyor:
+
+```python
+path = kagglehub.dataset_download("yasserh/advertising-sales-dataset")
+print("Path to dataset files:", path)
+data = pd.read_csv(path + "/AdvertisingBudgetandSales.csv")
+data```
+
+TV reklam bütçesi ile satış arasındaki ilişkiyi görselleştirmek için bir scatter plot oluşturdum:
+
+```python
+# Veriyi seçtim
+X = data[['TV Ad Budget ($)']]
+y = data['Sales ($)']
+
+plt.scatter(X, y, color="red")
+plt.xlabel("TV Ad Budget ($)")
+plt.ylabel("Sales ($)")
+plt.title("TV Ad Budget And Sales")
+plt.show() ```
+
+![Reklam bütçesi ile satış arasındaki ilişki grafiği](https://miro.medium.com/v2/resize:fit:640/format:webp/1*ed2UbzNptYc89rgP5KKt7Q.png)
+
+### 2. Modeli Eğitme
+
+Veriyi görselleştirdikten sonra, LinearRegression modelini kullandım. Modeli TV reklam bütçesi ile satışlar arasındaki ilişkiyi öğrenmesi için eğittim:
+
+```python
+model = LinearRegression()
+model.fit(X, y)```
+
+### 3. Modelin Performansını Değerlendirme
+
+Modelin doğruluğunu ölçmek için Mean Squared Error (MSE) ve R² Score hesapladım:
+
+```python
+predictions = model.predict(X)
+predictions
+
+mse = mean_squared_error(y, predictions)
+r2 = r2_score(y, predictions)
+
+print(f"Coefficient: {model.coef_[0]}")
+print(f"Intercept: {model.intercept_}")
+print(f"Mean Squared Error: {mse}")
+print(f"R^2 Score: {r2}")```
+
+![predictions çıktısı](https://miro.medium.com/v2/resize:fit:640/format:webp/1*4L3ahfSbfd1bWdBZ7ho-sw.png)
+
+### 4. Sonuçları Görselleştirme
+
+Modelin öğrendiği doğrusal ilişkiyi, veri üzerindeki scatter plot ile birlikte görselleştirdim:
+
+```python
+plt.scatter(X, y, color="red", label="Actual Sales")
+plt.plot(X, predictions, color="blue", label="Regression Line")
+plt.xlabel("Feature")
+plt.ylabel("Target")
+plt.title("Feature vs. Target")
+plt.legend()```
+
+![Lineer Regresyon](https://miro.medium.com/v2/resize:fit:640/format:webp/1*2eov96IdSblved-KT5amJg.png)
+
+## 5. Sonuçlar
+
+- **Katsayı**: Modelin katsayıları, TV reklam bütçesinin satışlar üzerindeki etkisini gösterir.
+- **Intercept (Sabit Terim)**: Modelin başlangıç noktasıdır; yani TV reklam bütçesi sıfır olduğunda satışlar ne kadar olur?
+- **R² Değeri**: Modelin başarısını ölçmek için kullanılan bu değer, modelin veriye ne kadar uyduğunu gösterir. Yüksek bir R² değeri, modelin doğruluğunun yüksek olduğunu belirtir.
+
+---
+
+## Sonuç
+
+Bu projede lineer regresyon modeli ile TV reklam bütçesinin satışlar üzerindeki etkisini inceledim. Bu tür basit analizler, daha karmaşık veri bilimsel problemlerine temel oluşturabilir ve veri analizi sürecinin önemli bir parçasıdır.
+
+# Decision Tree
+
+## Decision Tree Nedir?
+
+Decision Tree, bir makine öğrenmesi algoritmasıdır ve genellikle sınıflandırma ve regresyon problemleri için kullanılır. Bu algoritma, bir veri setindeki kararları modellemek için ağaç yapısını kullanır. Yani, bir soru (düğüm) sorarak veriyi bir sonraki aşamaya yönlendirir. Bu süreç, hedef değişkenin tahmin edilene kadar devam eder. 
+
+Bir karar ağacı, her bir iç düğümde bir özellik (özellikler) üzerinden bir test yapar, her bir dal ise bu testin sonucuna bağlı olarak iki ya da daha fazla alt gruba ayrılır. Karar ağacı, görsel olarak oldukça anlaşılırdır çünkü her bir yol, kararların nasıl alındığını ve hangi özelliklerin kararlar üzerinde etkili olduğunu gösterir.
+
+---
+
+## Veri Biliminde Decision Tree Nerede Kullanılır?
+
+Veri bilimi ve makine öğrenmesinde Decision Tree, özellikle aşağıdaki alanlarda yaygın olarak kullanılır:
+
+- **Sınıflandırma ve Regresyon**: Karar ağaçları hem sınıflandırma (kategorik hedef değişkenler) hem de regresyon (sayısal hedef değişkenler) problemleri için kullanılabilir.
+- **Öznitelik Seçimi**: Karar ağaçları, en önemli özellikleri belirlemede de kullanılabilir. Özelliklerin hangi sıklıkla kararlar üzerinde etkili olduğunu analiz etmek mümkündür.
+- **Veri Keşfi**: Karar ağacı, verinin nasıl yapılandığını anlamak için de iyi bir araçtır. Bu sayede verilerin içerisindeki ilişkileri ve örüntüleri keşfetmek mümkündür.
+
+---
+
+## Decision Tree’de Önemli Olan Kavramlar
+
+- **Kök Düğüm (Root Node)**: Modelin ilk kararını aldığı düğümdür. Bu düğümde, hedef değişkenin tahmini için en anlamlı özellik seçilir.
+- **İç Düğüm (Internal Node)**: Her iç düğüm, bir özelliğe dayalı karar verir. Bu, veri setinin farklı özelliklerine göre alt gruplara ayrılmasına olanak tanır.
+- **Dallar (Branches)**: Her iç düğümde yapılan test sonucunda oluşturulan yollardır. Bu dallar, veriyi alt kümelere ayıran kriterleri temsil eder.
+- **Yaprak Düğüm (Leaf Node)**: Son kararın verildiği düğümdür. Bu düğümde, hedef değişkenin tahmin edilen değeri bulunur.
+- **Gözlem (Observation)**: Karar ağacında, her yol bir gözlemi (veri örneği) temsil eder. Bu gözlem, veriye dayalı olarak bir sınıfa ya da bir sayısal değere tahmin edilir.
+plt.show()
+
+# Projem ve Kodlarım
+
+Bu projede, **Decision Tree Regressor** modelini kullanarak film türlerine göre film puanlarını tahmin etmeyi amaçladım. Proje adımlarını şöyle özetleyebilirim:
+
+## 1. Veri Setini Yükleme ve Hazırlama
+Kaggle’dan indirilen **“Top Movie Recommendation Dataset”** veri setini kullandım. Bu veri setinde her bir kullanıcı tarafından verilen film puanları yer almaktadır. Veriyi yükledikten sonra, **Genre** ve **Rating** sütunları üzerinde işlem yaptım.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import kagglehub
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn import tree```
+
+```python
+path = kagglehub.dataset_download("sujithmandala/top-movie-recommendation-dataset")
+print("Path to dataset files:", path)```
+
+```python
+data = pd.read_csv(path + "/movies.csv")
+data```
+
+![Veri](https://miro.medium.com/v2/resize:fit:640/format:webp/1*Vznx42LwrfLUyN6r2C0oog.png)
+
+```python
+# Gerekli sütunları seçtim (örnek olarak 'Genre' ve 'Rating' kullandım)
+df = data[['Genre', 'Rating']]```
+
+## 2. Veri Temizleme
+Verimizdeki eksik (null) değerleri **dropna()** fonksiyonu ile kaldırdım.
+
+`df = df.dropna()`
+
+## 3. Kategorik Verilerin Dönüştürülmesi
+**Genre** sütunu kategorik bir veri olduğu için, bunu **One-Hot Encoding** yöntemi ile sayısal verilere dönüştürdüm. Bu sayede her bir film türü için ayrı bir sütun oluşturdum.
+
+```python
+# Genre sütununu One-Hot Encoding ile dönüştürdüm
+encoder = OneHotEncoder()
+genre_encoded = encoder.fit_transform(df[['Genre']]).toarray()
+genre_columns = encoder.get_feature_names_out(['Genre'])```
+
+```python
+# Yeni DataFrame'e dönüştürdüm
+df_encoded = pd.DataFrame(genre_encoded, columns=genre_columns)
+df = pd.concat([df.reset_index(drop=True), df_encoded], axis=1).drop(columns=["Genre"]) ```
+
+
+## 4. Bağımsız ve Bağımlı Değişkenlerin Ayrılması
+Bağımsız değişken olarak **Genre**'yi, bağımlı değişken olarak ise **Rating**'i seçtim.
+
+```python
+# Bağımsız (X) ve bağımlı değişkenleri (y) ayrıldım
+X = df.drop(columns=["Rating"])  # Tahmin için Rating dışındaki sütunlar
+y = df["Rating"]```
+
+## 5. Veri Setinin Eğitim ve Test Olarak Ayrılması
+Veriyi %80 eğitim ve %20 test olarak ayırdım. Eğitim verisi ile modelimizi eğittim.
+
+`X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)`
+
+## 6. Decision Tree Modeli Eğitimi
+**DecisionTreeRegressor** modelini kullandım ve eğitim verisi ile modelimizi eğittik.
+
+```python
+model = DecisionTreeRegressor(random_state=42)
+model.fit(X_train, y_train```
+
+## 7. Tahmin ve Değerlendirme
+Modelimizle tahminler yaptım ve sonuçları **Mean Squared Error (MSE)** ve **R-squared (R2)** gibi metriklerle değerlendirdim.
+
+`y_pred = model.predict(X_test)`
+
+```python
+# Model performansını değerlendirdim
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+print("Mean Squared Error (MSE):", mse)
+print("R-squared (R2):", r2)```
+
+## 8. Modelin Görselleştirilmesi
+Karar ağacını görselleştirerek, modelin nasıl çalıştığını daha iyi bir şekilde anlamaya çalıştım. Ayrıca, gerçek ve tahmin edilen değerler arasındaki ilişkiyi gösteren bir **heatmap** oluşturdum.
+
+```python
+# Decision Tree Heatmap Oluşturdum
+plt.figure(figsize=(12, 8))
+tree.plot_tree(model, filled=True, feature_names=X.columns, rounded=True)
+plt.show()```
+
+![Decision Tree HeatMap](https://miro.medium.com/v2/resize:fit:720/format:webp/1*GOqYeIFvj5PQcGAsqUr56w.png)
+
+Bu adımlar, **Decision Tree** algoritmasının bir regresyon problemi üzerindeki uygulamasını detaylı bir şekilde anlatmaktadır.
+
 
