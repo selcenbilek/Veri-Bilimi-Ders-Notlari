@@ -132,7 +132,7 @@ Sınıflandırılmış veriler (cinsiyet, renk)
 ---
 
 ## Veri Bilimi Platform ve Araçları
-- **Hugging Face**: NLP için transfer öğrenme
+- **Hugging Face**: Makine öğrenimi kullanarak uygulamalar geliştirmek için hesaplama araçları sağlayan bir platform
 - **Kaggle**: Veri bilimi yarışmaları ve veri setleri
 - **Streamlit**: Hızlı prototipleme ve makine öğrenmesi uygulamaları
 - **Firebase**: Gerçek zamanlı veri senkronizasyonu
