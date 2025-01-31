@@ -1,4 +1,4 @@
-***VERİ BİLİMİ DERS NOTLARI***
+***VERİ BİLİMİ NOTLARI***
 
 ## Veri Analizi : Elimizdeki veriyi anlamaya çalışılmasıdır.
 
@@ -12,7 +12,7 @@
 
 ## Aktivasyon Fonksiyonu : Yapay sinir ağlarında bir nöronun çıktısını belirleyen matematiksel fonksiyon. Aktivasyon fonksiyonları;
 	
-  1) Sigmoid : Sürekli gerçek sayıyı (0,1) aralığında dönüştüren matematiksel fonksiyondur. 
+        1) Sigmoid : Sürekli gerçek sayıyı (0,1) aralığında dönüştüren matematiksel fonksiyondur. 
 S(x)=1/(1+e^(-x) )
 
 	2) tanh (Hyperbolic Tangent) : Giriş değerini (-1,1) aralığında sıkıştıran matematiksel fonksiyondur.
